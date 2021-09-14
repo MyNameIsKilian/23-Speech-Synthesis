@@ -28,9 +28,9 @@ const toggle = (startOver = true) => {
   }
 }
 
-const setOption = () => {
-  console.log(this.name, this.value);
-  msg[this.name] = this.value;
+const setOption = (e) => {
+  console.log(e);
+  msg[e.target.name] = e.target.value;
   toggle();
 }
 
